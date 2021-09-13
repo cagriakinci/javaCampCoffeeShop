@@ -15,10 +15,10 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 
 	public void save(Customer customer) throws NumberFormatException, RemoteException {
 		if (customerCheckService.CheckIfRealPerson(customer)) {
-			System.out.println("Giriş başarılı");
+			System.out.println("GiriÅŸ baÅŸarÄ±lÄ±");
 			System.out.println("Saved to db : " + customer.getFirstName());
 		} else {
-			System.out.println("Geçersiz kişi");
+			System.out.println("GeÃ§ersiz kiÅŸi");
 		}
 	}
 }
